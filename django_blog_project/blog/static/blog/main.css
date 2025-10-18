@@ -22,7 +22,8 @@ ul {
   transition-duration: 2s;
   transition-timing-function: ease-out;
   transition-delay: 1s;
-  background-color: #4682b4
+  transform: scale(1.2);
+  background-color: #4682b4;
 
 }
 
