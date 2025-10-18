@@ -16,6 +16,10 @@ ul {
   background-color: #5f788a;
 }
 
+.bg-steel:hover {
+  background-color: #4682b4
+}
+
 .site-header .navbar-nav .nav-link {
   color: #cbd5db;
 }
