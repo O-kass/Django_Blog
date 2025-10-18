@@ -14,10 +14,15 @@ ul {
 
 .bg-steel {
   background-color: #5f788a;
+  transition-property: height;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 1s;
 }
 
 .bg-steel:hover {
   background-color: #4682b4
+
 }
 
 .site-header .navbar-nav .nav-link {
