@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users.apps.UsersConfig'
+    'users.apps.UsersConfig',
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -118,7 +120,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
