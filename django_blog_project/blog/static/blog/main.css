@@ -14,15 +14,12 @@ ul {
 
 .bg-steel {
   background-color: #5f788a;
-
+  transition: transform 0.9s ease-out, background-color 0.9s ease-out;
 }
 
-.bg-steel:hover::before {
-  transition: transform: scaleX(1.05) 0.9s ease-out, background-color: #527D9F 0.9s ease;
-}
-
-.bg-steel:hover::after {
-  transition: transform: scaleX(1.1) 0.9s ease-out, background-color: #4682b4 0.9s ease;
+.bg-steel:hover {
+  transform: scaleX(1.1);
+  background-color: #4682b4;
 }
 
 .site-header .navbar-nav .nav-link {
