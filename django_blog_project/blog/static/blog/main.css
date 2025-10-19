@@ -18,7 +18,7 @@ ul {
 }
 
 .bg-steel:hover {
-  transform: scaleX(1.1);
+  transform: scaleY(1.2);
   background-color: #4682b4;
 }
 

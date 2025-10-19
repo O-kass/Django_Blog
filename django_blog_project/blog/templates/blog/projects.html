@@ -13,5 +13,33 @@
       height="600"
       style="border:none;">
     </iframe>
+
+    <style>
+        .button_leave{
+           position:
+           padding: 25px 50px;
+           border-radius: 8px;
+           text-align: center;
+           background-color: rgb(255,0,0);
+           color: black;
+
+        }
+
+        .button_leave:hover{
+           background-color: #e7e7e7;color: grey
+        }
+
+        .button_leave:active {
+          transform: translateY(4px);
+        }
+    </style>
+
+    <div id=html style="position: fixed; bottom: 50px; left: 50%;">
+        <a href="{% url 'blog-home' %}">
+        <button class="button_leave">RETURN</button>
+        </a>
+
+    </div>
+
 </body>
 </html>
