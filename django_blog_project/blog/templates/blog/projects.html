@@ -1,18 +1,19 @@
+{% extends "blog/base.html" %}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>PROJECTS</title>
-</head>
-<body>
-    <iframe
-      src="{% static 'projects/index.html' %}"
-      width="100%"
-      height="600"
-      style="border:none;">
-    </iframe>
+{% block title %}
+<title>PROJECTS</title>
+{% endblock title %}
+
+
+{% block content %}
+<iframe
+  src="{% static 'projects/index.html' %}"
+  width="100%"
+  height="600"
+  style="border:none;">
+</iframe>
 
     <style>
         .button_leave{
@@ -42,6 +43,23 @@
         </a>
 
     </div>
+{% endblock content %}
 
-</body>
-</html>
+{% block sidebar %}
+
+<div class="content-section">
+    <h3>GMM_Simulation</h3>
+    <p class='text-muted'>This is a pygame project which uses the gravitational formuala GMM/r squared to simulate objects over a mass
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-dark">
+        <dt class="col-sm-3">How to play</dt>
+        <dd class="col-sm-9">Click once and then move your mouse to see  .</dd>
+        </li>
+        <li class="list-group-item list-group-item-light">Announcements</li>
+        <li class="list-group-item list-group-item-dark">Calendars</li>
+        <li class="list-group-item list-group-item-light">etc</li>
+      </ul>
+    </p>
+</div>
+{% endblock sidebar %}
+
