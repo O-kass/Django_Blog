@@ -14,35 +14,6 @@
   height="600"
   style="border:none;">
 </iframe>
-
-    <style>
-        .button_leave{
-           position:
-           padding: 25px 50px;
-           border-radius: 8px;
-           text-align: center;
-           background-color: rgb(255,0,0);
-           color: black;
-           transform : scaleX(1.5);
-           transform : scaleY(1.5);
-
-        }
-
-        .button_leave:hover{
-           background-color: #e7e7e7;color: grey
-        }
-
-        .button_leave:active {
-          transform: translateY(4px);
-        }
-    </style>
-
-    <div id=html style="position: fixed; bottom: 50px; left: 50%;">
-        <a href="{% url 'blog-home' %}">
-        <button class="button_leave">RETURN</button>
-        </a>
-
-    </div>
 {% endblock content %}
 
 {% block sidebar %}
@@ -52,13 +23,25 @@
     <p class='text-muted'>This is a pygame project which uses the gravitational formuala GMM/r squared to simulate objects over a mass
       <ul class="list-group">
         <li class="list-group-item list-group-item-dark">
-        <dt class="col-sm-3">How to play</dt>
-        <dd class="col-sm-9">Click once and then move your mouse to see  .</dd>
+        <dt class="col-sm-8">HOW TO PLAY</dt>
+        <dd class="col-sm-12">Click once and then move your mouse to see a white line this line is the trajectory the red dot (the one you just made by clicking) follows.</dd>
         </li>
-        <li class="list-group-item list-group-item-light">Announcements</li>
-        <li class="list-group-item list-group-item-dark">Calendars</li>
-        <li class="list-group-item list-group-item-light">etc</li>
+        <li class="list-group-item list-group-item-light">
+        <dt class="col-sm-8">PACKAGES USED</dt>
+        <dd class="col-sm-12">Math, Pygame</dd>
+        </li>
+        <li class="list-group-item list-group-item-dark">
+        <dt class="col-sm-8">TIME TAKEN</dt>
+        <dd class="col-sm-12">Approx one day of work(6 hours)</dd>
+        </li>
+        <li class="list-group-item list-group-item-light">
+        <dt class="col-sm-8">POSSIBLE EXT</dt>
+        <dd class="col-sm-12">Add GUI to change planets/environment to simulate different gravitational forces</dd>
+        </li>
       </ul>
+    <a href="{% url 'blog-home' %}">
+        <button type="button" class="btn btn-success" style="width: 300px;">Return</button>
+    </a>
     </p>
 </div>
 {% endblock sidebar %}
