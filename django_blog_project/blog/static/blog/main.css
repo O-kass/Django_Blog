@@ -18,7 +18,7 @@ ul {
 }
 
 .bg-steel:hover {
-  transform: scaleY(1.2);
+  transform: scaleY(1.1);
   background-color: #4682b4;
 }
 
@@ -43,11 +43,11 @@ ul {
 }
 
 .article-title {
-  color: #444444;
+  color: #3f51b5;
 }
 
 a.article-title:hover {
-  color: #428bca;
+  color: #4682b4;
   text-decoration: none;
 }
 
@@ -88,3 +88,16 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+
+
+.tile {
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: transparent; /* Reset Bootstrap's default */
+}
+

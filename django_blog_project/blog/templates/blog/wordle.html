@@ -1,0 +1,39 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <h1> Blog Wordle </h1>
+
+    <form method="post">
+    {% csrf_token %}
+
+    {{ form.guess.label_tag }}
+    {{ form.guess }}
+
+    {% if form.guess.errors %}
+        <div class="invalid-feedback d-block">
+            {{ form.guess.errors|striptags }}
+        </div>
+    {% endif %}
+
+    <button type="submit">Submit</button>
+</form>
+
+
+    <style>
+   .tile-correct { background-color: #6AAA64 !important; }
+   .tile-present { background-color: #C9B458 !important; }
+   .tile-absent { background-color: #787C7E !important; }
+   </style>
+
+    {% for res in result %}
+        <button class="tile
+            {% if res == 'Correct' %}tile-correct{% elif res == 'Present' %}tile-present{% else %}tile-absent{% endif %}">
+            {{ res }}
+        </button>
+    {% endfor %}
+
+
+
+{% endblock content %}
